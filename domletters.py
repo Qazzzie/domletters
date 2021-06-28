@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# Made executable with chmod -x domletters.py
 """
     Zach Santangelo
     CS461P HW1

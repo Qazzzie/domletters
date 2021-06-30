@@ -4,7 +4,7 @@
     Zach Santangelo
     CS461P HW1
 """
-import sys
+from sys import stdin
 import os.path
 
 def is_valid_word(word):
@@ -42,15 +42,27 @@ def count_dom_letters(sentence):
         
 
 
-if __name__ == "__main__": #to Call in CLI: $ ./domletters.py sentence.txt 
-    #process file passed in as argument
-    file = str(sys.argv[1])
-    print(file)
+if __name__ == "__main__": 
+    
+    sentence = ''
+    for line in stdin:
+        line = line.strip('\n')
+        sentence += line + ' '
 
-    with open(file) as path: #https://pythonspot.com/read-file/
-        sentence = path.read()
+        #print(sentence)
 
-    words = sentence.split()
-    print(words)
+    #sentence.strip('\n')
+    
+    print(sentence)
 
-    count_dom_letters(words)
+    sentence = sentence.strip(' ')
+    sentence = sentence.split(' ')
+
+    print(sentence)
+    # with open(file) as path: #https://pythonspot.com/read-file/
+    #     sentence = path.read()
+
+    # words = sentence.split()
+    # print(words)
+
+    count_dom_letters(sentence)

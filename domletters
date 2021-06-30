@@ -49,20 +49,10 @@ if __name__ == "__main__":
         line = line.strip('\n')
         sentence += line + ' '
 
-        #print(sentence)
-
-    #sentence.strip('\n')
-    
-    print(sentence)
 
     sentence = sentence.strip(' ')
     sentence = sentence.split(' ')
 
-    print(sentence)
-    # with open(file) as path: #https://pythonspot.com/read-file/
-    #     sentence = path.read()
 
-    # words = sentence.split()
-    # print(words)
 
     count_dom_letters(sentence)

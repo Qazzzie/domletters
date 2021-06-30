@@ -20,12 +20,10 @@ def count_dom_letters(sentence):
     alphabet=[]
     for i in range(97,123):
         alphabet.append(chr(i))
-    #print(alphabet)
 
     dom_letters_total = 0
 
     for word in sentence:
-                #print("\n" + word + "\n")
         dom_letter_count_in_word = 0
         if(is_valid_word(word)):
             for char in alphabet:     
